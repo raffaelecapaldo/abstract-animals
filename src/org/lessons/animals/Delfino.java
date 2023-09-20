@@ -1,8 +1,9 @@
 package org.lessons.animals;
 
 import org.lessons.animals.abs.Animale;
+import org.lessons.animals.interf.INuotante;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements INuotante {
 
 	@Override
 	public void verso() {
@@ -13,6 +14,11 @@ public class Delfino extends Animale {
 	public void mangia() {
 		System.out.println("Il delfino sta mangiando un pesce");
 		
+	}
+
+	@Override
+	public void nuota() {
+		System.out.println("Sto nuotando!!!");
 	}
 
 }
