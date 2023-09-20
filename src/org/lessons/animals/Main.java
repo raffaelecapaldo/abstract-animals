@@ -1,6 +1,17 @@
 package org.lessons.animals;
 
+import org.lessons.animals.interf.INuotante;
+import org.lessons.animals.interf.IVolante;
+
 public class Main {
+	
+	static void faiVolare(IVolante animale) {
+		animale.vola();
+	}
+	static void faiNuotare(INuotante animale) {
+		animale.nuota();
+	}
+
 
 	public static void main(String[] args) {
 		
@@ -33,6 +44,22 @@ public class Main {
 		delfino.mangia();
 		delfino.dormi();
 
+		System.out.println("\n-----------------------\n");
+		System.out.println("Metodi");
+		
+		System.out.print("Passerotto: ");
+	    faiVolare(passerotto);
+	    System.out.print("Aquila: ");
+	    faiVolare(passerotto);
+	    System.out.print("Delfino: ");
+	    faiNuotare(delfino);
+	    System.out.print("Cane: ");
+	    faiNuotare(cane);
+
+
+	    
+		
+		
 	}
 
 }
