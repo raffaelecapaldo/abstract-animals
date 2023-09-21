@@ -50,7 +50,7 @@ public class Main {
 		System.out.print("Passerotto: ");
 	    faiVolare(passerotto);
 	    System.out.print("Aquila: ");
-	    faiVolare(passerotto);
+	    faiVolare(aquila);
 	    System.out.print("Delfino: ");
 	    faiNuotare(delfino);
 	    System.out.print("Cane: ");
